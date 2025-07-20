@@ -28,8 +28,13 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS=['127.0.0.1', 'localhost']
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS=['127.0.0.1', 'localhost',
+                'marianoluizk-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+                'https://sentianalyzer.1y33j133w6yj.us-south.codeengine.appdomain.cloud'
+]
+CSRF_TRUSTED_ORIGINS = [
+    'https://marianoluizk-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
