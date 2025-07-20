@@ -17,3 +17,4 @@ docker compose up - start services mongodb & node
 
 backend: 3030
 frontend: 8000
+sentianalyzer: 5000
