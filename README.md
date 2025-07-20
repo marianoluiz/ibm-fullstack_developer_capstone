@@ -12,5 +12,8 @@ python3 manage.py createsuperuser
 npm run build
 
 
-docker-compose up - start services mongodb & node
+docker compose up - start services mongodb & node
+# not docker-compose
 
+backend: 3030
+frontend: 8000
