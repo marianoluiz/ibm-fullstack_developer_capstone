@@ -30,8 +30,11 @@ const Dealer = () => {
     });
     const retobj = await res.json();
     
+  // 👇 log the entire response object to the console
+  console.log("Dealer JSON Response:", retobj);
+
     if(retobj.status === 200) {
-      setDealer(retobj.dealer)
+      setDealer(retobj.dealer[0])
     }
   }
 
@@ -41,6 +44,9 @@ const Dealer = () => {
     });
     const retobj = await res.json();
     
+    // 👇 log the entire response object to the console
+    console.log("Reviews JSON Response:", retobj);    
+
     if(retobj.status === 200) {
       if(retobj.reviews.length > 0){
         setReviews(retobj.reviews)
