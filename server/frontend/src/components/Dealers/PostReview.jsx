@@ -21,7 +21,7 @@ const PostReview = () => {
   let review_url = root_url+`djangoapp/add_review`;
   let carmodels_url = root_url+`djangoapp/get_cars`;
 
-  const postreview = async ()=>{
+  const postreviewchk = async ()=>{
     let name = sessionStorage.getItem("firstname")+" "+sessionStorage.getItem("lastname");
     //If the first and second name are stores as null, use the username
     if(name.includes("null")) {
@@ -114,7 +114,7 @@ const PostReview = () => {
       </div>
 
       <div>
-      <button className='postreview' onClick={postreview}>Post Review</button>
+      <button className='postreview' onClick={postreviewchk}>Post Review</button>
       </div>
     </div>
     </div>
